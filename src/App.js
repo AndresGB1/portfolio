@@ -1,5 +1,5 @@
 import './App.css';
-import AppBar from './Pages/AppBar.js';
+import AppBar from './pages/AppBar.js';
 
 function App() {
   return (

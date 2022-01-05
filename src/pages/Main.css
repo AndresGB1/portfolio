@@ -1,0 +1,92 @@
+
+.header {
+    text-align: center;
+    margin-left: 14%;
+    margin-right:10%;
+    margin-top: 17%;
+}
+.banner-skills{
+    margin-top:5%;
+    padding-top: 4%;
+    padding-bottom: 11%;
+    background-color: #202020;
+}
+.align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pad{
+    padding-top: 5%;
+}
+.secondary {
+    color: #202020;
+}
+.p1{
+    text-align: left;
+    font-family: "Fira code";
+    font-style: regular;
+    font-size: 30px;
+}
+.title{
+    text-align: center;  
+    font-family: "Fira code";
+    font-style: regular;
+    font-size: 35px;
+}
+.p2{
+    
+    font-family: "Fira Mono";
+    font-style: regular;
+    font-size: 15px;
+}
+.justify{  
+    text-align: justify;
+}
+.description{
+    padding-right: 20%;
+}
+.hr1{
+    border :none;
+    margin: auto;
+    margin-top: -1.5%;
+    height: 1px;
+    background-color: #ffffff;
+    width: 90%;
+}
+
+.hr2{
+    border :none;
+    margin: auto;   
+    margin-top: 14%;
+    height: 1px;
+    background-color: #ffffff;
+    width: 56%;
+}
+.hr3{
+    border :none;
+    margin: auto;   
+    margin-top: -5%;
+    height: 1px;
+    background-color: white;
+    width: 56%;
+}
+.text-skills{
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: justify;
+}
+.button-appbar{
+    color: inherit;
+    flex-grow: 1;
+}
+.projects{
+    margin-top: 5%;
+    padding-top: 4%;
+    height: 1000px;
+    background: linear-gradient(to bottom, #1e2072, #524f97);
+}
+.projects-title{
+    margin-top: 10px;
+}
+
