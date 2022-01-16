@@ -4,12 +4,18 @@
     margin-left: 14%;
     margin-right:10%;
     margin-top: 17%;
+    
+            
 }
-.banner-skills{
-    margin-top:5%;
-    padding-top: 4%;
-    padding-bottom: 11%;
+.headercolor{
+    background: linear-gradient(to bottom, #050992, #3a3992);
+    padding-bottom: 5%;
+}
+.banner-skills{ 
+    
     background-color: #202020;
+    padding-bottom: 5%;
+
 }
 .align{
     display: flex;
@@ -18,6 +24,12 @@
 }
 .pad{
     padding-top: 5%;
+}
+.pad2{
+    margin: 10%;
+}
+.pad3{
+    margin-top: 10%;
 }
 .secondary {
     color: #202020;
@@ -32,13 +44,15 @@
     text-align: center;  
     font-family: "Fira code";
     font-style: regular;
-    font-size: 35px;
+    font-size: 33px;
 }
 .p2{
     
     font-family: "Fira Mono";
     font-style: regular;
     font-size: 15px;
+    opacity: 1;
+    transition: 0.5s;
 }
 .justify{  
     text-align: justify;
@@ -50,6 +64,7 @@
     border :none;
     margin: auto;
     margin-top: -1.5%;
+
     height: 1px;
     background-color: #ffffff;
     width: 90%;
@@ -66,7 +81,7 @@
 .hr3{
     border :none;
     margin: auto;   
-    margin-top: -5%;
+    margin-top: 15%;
     height: 1px;
     background-color: white;
     width: 56%;
@@ -81,12 +96,98 @@
     flex-grow: 1;
 }
 .projects{
-    margin-top: 5%;
+    
     padding-top: 4%;
-    height: 1000px;
-    background: linear-gradient(to bottom, #1e2072, #524f97);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    background: #202020;
 }
 .projects-title{
     margin-top: 10px;
 }
 
+
+  
+
+.logos{
+    transform: translateZ(50px) ;
+}
+.skill-img{
+    
+    transform-style: preserve-3d;
+    height:323px;
+    width:406px;
+    perspective: 2000px;
+}
+.back-img{
+    background: url("../../public/assets/skills/back.png");
+    background-size: 406px 323px;
+}
+.front-img{
+    background: url("../../public/assets/skills/front.png");
+    background-size: 406px 323px;
+}
+.other-img{
+    background: url("../../public/assets/skills/other.png");
+    background-size: 406px 323px;
+}
+
+.back-logos{
+    position: relative;
+    margin:auto;
+    margin-top: 5%;
+    display: block;
+    transform: translateZ(20px) ;
+
+
+}
+.card-projects{
+    margin:7%;
+    margin-top: 8%;
+    
+    border-radius: 17px;
+    background: linear-gradient(to bottom, #1E2072, #3C3897);;
+    
+}
+.title-card{
+    font-family: "Fira code";
+    font-style: regular;
+    font-size: 25px;
+}
+.description-card{
+    font-family: "Fira Mono";
+    font-style: regular;
+    font-size: 12px;
+}
+.pad-card-text{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.technologies-card{
+    font-family: "Fira Mono";
+    font-style: regular;
+    font-size: 10px;
+}
+.second-card{
+    background: #202020;
+}
+.left-bar{
+    background-color: white;
+    border: none;
+    height: 50%;
+    width:1px;
+    margin-right: 10%;
+}
+.right-bar{
+        border-left: 1px solid white;
+    height: 50%;
+    margin-left: 10%;
+}
+.parent2{
+    position: absolute;
+    
+    transform-style: preserve-3d;
+    
+    perspective: 1000px;
+}
