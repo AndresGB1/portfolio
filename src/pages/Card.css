@@ -1,0 +1,45 @@
+.card-projects{
+    margin:6%;
+    
+    margin-top: 8%;
+    
+    border-radius: 17px;
+    background: linear-gradient(to bottom, #050992, #2E3192);;
+    
+}
+.title-card{
+    font-family: "Fira code";
+    font-style: regular;
+    font-size: 25px;
+}
+.description-card{
+    font-family: "Fira Mono";
+    font-style: regular;
+    font-size: 13px;
+}
+.pad-card-text{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.technologies-card{
+    font-family: "Fira Mono";
+    font-style: regular;
+    font-size: 9px;
+}
+.second-card{
+    margin-top:12%;
+    border-radius: 17px;
+    padding:2%;
+    margin-right: 7%;
+    margin-left: 1%;
+    background: #202020;
+}
+.center-contenedor{
+    position: relative;
+
+}
+.align-p{
+    position: absolute;
+  top: 50%;
+  transform: translate(0, -50%)
+}

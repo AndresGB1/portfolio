@@ -2,31 +2,11 @@ import * as React from "react";
 import "./Card.css";
 import "./Main.css";
 export default function MediaCard(props) {
-  const { minHeight, setMinHeight } = React.useState(500);
-  const { background, setBackground } = React.useState(
-    props.background ? props.background : "inherit"
-  );
-  const { title, setTitle } = React.useState(
-    props.title ? props.title : "Title"
-  );
-  const { description, setDescription } = React.useState(
-    props.description ? props.description : "Description"
-  );
-  const { image, setImage } = React.useState(
-    props.image
-      ? props.image
-      : "https://i.pinimg.com/originals/17/d6/ce/17d6ced5b0a988e6df4879cd79793f73.jpg"
-  );
-
-  const { textAppear, setTextAppear } = React.useState(
-    props.textAppear ? props.textAppear : false
-  );
+  
 
   const over = (e) => {
     if (isOver) {
-      setBackground("inherit");
-
-      textAppear(true);
+   
     }
   };
   const [changes, setChanges] = React.useState("0");
@@ -38,7 +18,7 @@ export default function MediaCard(props) {
     setChanges("0");
   };
   return (
-    <div className="card-projects" width={props.width}>
+    <div className="card-projects" height={props.width}>
       {props.num !== 0 ? (
         <div className="card-img-caption row align ">
           <div className="col-md-6">
@@ -47,34 +27,47 @@ export default function MediaCard(props) {
               src={props.image}
               background={"transparent"}
               height={props.height}
-              width={props.width}
               alt="Card  cap"
             />
           </div>
           <div className="col-md-6 pad-card-text">
             <div>
-            <p className="primary-text title-card">{props.title}</p>
-            <p className=" secondary-text description-card p2">
-              {props.description}
-            </p>
-            </div>
-            <div className="second-card row">
-              <p className=" secondary-text technologies-card">
-                {props.technologies}
+              <p className="primary-text title-card">{props.title}</p>
+              <p className=" secondary-text description-card ">
+                {props.description}
               </p>
+            </div>
+            <div className="second-card row ">
+              <div className="secondary-text col-md-9 align technologies-card">
+                
+                {props.technologies}
+                
+              </div>
+              <div className="col-md-3 align">
+                <img className="img" src={props.icon} alt="icon" height="20" />
+              </div>
             </div>
           </div>
         </div>
       ) : (
         <div className="card-img-caption row align ">
-          <div className="col-md-6  pad-card-text">
-            <p className="primary-text title-card">{props.title}</p>
-            <p className=" secondary-text description-card p2">
-              {props.description}
-            </p>
-            <p className=" secondary-text technologies-card">
-              {props.technologies}
-            </p>
+          <div className="col-md-6 pad-card-text">
+            <div>
+              <p className="primary-text title-card ">{props.title}</p>
+              <p className=" secondary-text description-card  ">
+                {props.description}
+              </p>
+            </div>
+            <div className="second-card row align">
+              <div className="col-md-8 align secondary-text  technologies-card">
+                
+                  {props.technologies}
+                
+              </div>
+              <div className="col-md-4 align">
+                <img className="img" src={props.icon} alt="icon" height="20" />
+              </div>
+            </div>
           </div>
           <div className="col-md-6">
             <img

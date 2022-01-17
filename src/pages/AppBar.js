@@ -2,6 +2,7 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import Header from "./Header.js";
 import Projects from "./Projects.js";
+import Footer from "./Footer.js";
 import "./Main.css";
 import "../figures/figures.css";
 import BannerSkills from "./BannerSkills.js";
@@ -78,7 +79,7 @@ export default function HideAppBar(props) {
               </Button>
               <Button
                 
-                to="/skills"
+                
                 color="inherit"
                 sx={{ flexGrow: 1 }}
                 style={{
@@ -141,6 +142,7 @@ export default function HideAppBar(props) {
       <BannerSkills />
       
       <Projects />
+      <Footer />
     </div>
   );
 }

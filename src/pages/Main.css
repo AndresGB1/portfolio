@@ -31,6 +31,10 @@
 .pad3{
     margin-top: 10%;
 }
+.margin{
+    margin-left: 2%;
+    margin-right: 2%;
+}
 .secondary {
     color: #202020;
 }
@@ -142,36 +146,7 @@
 
 
 }
-.card-projects{
-    margin:7%;
-    margin-top: 8%;
-    
-    border-radius: 17px;
-    background: linear-gradient(to bottom, #1E2072, #3C3897);;
-    
-}
-.title-card{
-    font-family: "Fira code";
-    font-style: regular;
-    font-size: 25px;
-}
-.description-card{
-    font-family: "Fira Mono";
-    font-style: regular;
-    font-size: 12px;
-}
-.pad-card-text{
-    padding-left: 5%;
-    padding-right: 5%;
-}
-.technologies-card{
-    font-family: "Fira Mono";
-    font-style: regular;
-    font-size: 10px;
-}
-.second-card{
-    background: #202020;
-}
+
 .left-bar{
     background-color: white;
     border: none;
@@ -190,4 +165,24 @@
     transform-style: preserve-3d;
     
     perspective: 1000px;
+}
+.footer{
+    background-color: #020202;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.icons{
+    margin-left: 27%;
+    margin-right: 27%;
+    padding-bottom: 5%;
+}
+.footer-text{
+    color: white;
+    font-family: "Fira Mono";
+    text-align: center;
+    font-size: 15px;
+}
+.button-projects{
+    text-align: center; 
+    align-items: center;
 }
