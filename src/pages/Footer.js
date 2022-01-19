@@ -6,7 +6,7 @@ export default function Footer(props) {
     <div className="footer  ">
       <div className=" icons row1 align">
         <div className="align col-footer">
-          <a href="https://github.com/AndresGB1" target="_blank" rel="">
+          <a href="https://github.com/AndresGB1" target="_blank" rel="noreferrer">
             <img
               className="icon"
               src="../assets/icons/github.svg"
@@ -18,7 +18,7 @@ export default function Footer(props) {
           <a
             href="https://linkedin.com/in/andrés-gb-b0b3661b0"
             target="_blank"
-            rel=""
+            rel="noreferrer"
           >
             <img
               src="../assets/icons/linkedin.svg"
@@ -28,7 +28,7 @@ export default function Footer(props) {
           </a>
         </div>
         <div className="align col-footer">
-          <a href="https://twitter.com/Andres_GB0" target="_blank" rel="">
+          <a href="https://twitter.com/Andres_GB0" target="_blank"rel="noreferrer">
             <img
               src="../assets/icons/twitter.svg"
               alt="twitter"

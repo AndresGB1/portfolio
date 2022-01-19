@@ -145,6 +145,7 @@ export default function BannerSkills() {
             style={{ width: "80%" }}
             infiniteLoop={true}
             showStatus={false}
+            showThumbs={false}
           >
             {direction.map((item, index) => (
               <div key={index}>

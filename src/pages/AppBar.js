@@ -19,7 +19,7 @@ import {
   Box,
   Menu,
 } from "@mui/material";
-import { makeStyles } from "@mui/styles";
+
 function HideOnScroll(props) {
   const { children, window } = props;
   const trigger = useScrollTrigger({
@@ -32,13 +32,6 @@ function HideOnScroll(props) {
     </Slide>
   );
 }
-const useStyles = makeStyles({
-  button: {
-    textTransform: "none",
-    color: "inherit",
-    sx: { flexGrow: 1 },
-  },
-});
 
 
 HideOnScroll.propTypes = {
@@ -52,10 +45,10 @@ HideOnScroll.propTypes = {
 const sections = ["Home", "Skills", "Projects", "Contact"];
 
 export default function HideAppBar(props) {
-  const classes = useStyles();
+  
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);

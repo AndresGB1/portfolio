@@ -15,9 +15,9 @@ export default function Projects() {
         <div className="button-projects">
           
           {projectsInfo.info.map((projectInfo, index) => (
-            <div>
+            <div  key={index}>
               <Card
-                key={index}
+               
                 index={index}
                 num={1}
                 title={projectInfo.title}
@@ -30,8 +30,8 @@ export default function Projects() {
             </div>
           ))}
           <div className="row margin">
-            {infoGames.info.map((gameInfo) => (
-              <div className="col-md-6 align">
+            {infoGames.info.map((gameInfo, index) => (
+              <div className="col-md-6 align" key={index}>
                 <Card
                   title={gameInfo.title}
                   num={2}
@@ -51,11 +51,13 @@ export default function Projects() {
         <Carousel
           infiniteLoop={true}
           showStatus={false}
+          showThumbs={false}
+
         >
           {projectsInfo.info.map((projectInfo, index) => (
-            <div>
+            <div  key={index}>
               <Card2
-                key={index}
+              
                 index={index}
                 num={1}
                 title={projectInfo.title}
@@ -72,9 +74,11 @@ export default function Projects() {
           style={{ width: "80%" }}
           infiniteLoop={true}
           showStatus={false}
+          showThumbs={false}
         >
           
-            {infoGames.info.map((gameInfo) => (
+            {infoGames.info.map((gameInfo, index) => (
+              <div key={index}>
 
                 <Card
                   title={gameInfo.title}
@@ -85,7 +89,7 @@ export default function Projects() {
                   technologies={gameInfo.technologies}
                   icon={"../assets/icons/github.svg"}
                 />
-              
+              </div>
             ))}
           
         </Carousel>
