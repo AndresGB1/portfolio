@@ -1,188 +1,269 @@
-
 .header {
-    text-align: center;
-    margin-left: 14%;
-    margin-right:10%;
-    margin-top: 17%;
-    
-            
+  text-align: center;
+  margin-left: 14%;
+  margin-right: 10%;
+  margin-top: 17%;
 }
-.headercolor{
-    background: linear-gradient(to bottom, #050992, #3a3992);
-    padding-bottom: 5%;
+.headercolor {
+  background: linear-gradient(to bottom, #050992, #3a3992);
+  padding-bottom: 5%;
 }
-.banner-skills{ 
-    
-    background-color: #202020;
-    padding-bottom: 5%;
+.banner-skills {
+  background-color: #202020;
+  padding-bottom: 5%;
+}
+.align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pad {
+  padding-top: 5%;
+}
+.pad2 {
+  padding: 10%;
+}
+.margin3 {
+  margin-bottom: 10%;
+}
+.margin {
+  margin-left: 2%;
+  margin-right: 2%;
+}
 
-}
-.align{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.pad{
-    padding-top: 5%;
-}
-.pad2{
-    margin: 10%;
-}
-.pad3{
-    margin-top: 10%;
-}
-.margin{
-    margin-left: 2%;
-    margin-right: 2%;
-}
 .secondary {
-    color: #202020;
+  color: #202020;
 }
-.p1{
-    text-align: left;
-    font-family: "Fira code";
-    font-style: regular;
-    font-size: 30px;
+.p1 {
+  text-align: left;
+  font-family: "Fira code";
+  font-style: regular;
+  font-size: 30px;
 }
-.title{
-    text-align: center;  
-    font-family: "Fira code";
-    font-style: regular;
-    font-size: 33px;
+.title {
+  text-align: center;
+  font-family: "Fira code";
+  font-style: regular;
+  font-size: 33px;
 }
-.p2{
-    
-    font-family: "Fira Mono";
-    font-style: regular;
-    font-size: 15px;
-    opacity: 1;
-    transition: 0.5s;
+.p2 {
+  font-family: "Fira Mono";
+  font-style: regular;
+  font-size: 15px;
+  opacity: 1;
+  transition: 0.5s;
 }
-.justify{  
-    text-align: justify;
+.justify {
+  text-align: justify;
 }
-.description{
-    padding-right: 20%;
+.description {
+  padding-right: 20%;
 }
-.hr1{
-    border :none;
-    margin: auto;
-    margin-top: -1.5%;
-
-    height: 1px;
-    background-color: #ffffff;
-    width: 90%;
+.hr1 {
+  border: none;
+  margin: auto;
+  margin-top: -1.5%;
+  height: 1px;
+  background-color: #ffffff;
+  width: 90%;
 }
 
-.hr2{
-    border :none;
-    margin: auto;   
-    margin-top: 14%;
-    height: 1px;
-    background-color: #ffffff;
-    width: 56%;
+.hr2 {
+  border: none;
+  margin: auto;
+  margin-top: 14%;
+  height: 1px;
+  background-color: #ffffff;
+  width: 56%;
 }
-.hr3{
-    border :none;
-    margin: auto;   
-    margin-top: 15%;
-    height: 1px;
-    background-color: white;
-    width: 56%;
+.hr3 {
+  border: none;
+  margin: auto;
+  margin-top: 15%;
+  height: 1px;
+  background-color: white;
+  width: 56%;
 }
-.text-skills{
-    padding-left: 15%;
-    padding-right: 15%;
-    text-align: justify;
+.text-skills {
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: justify;
 }
-.button-appbar{
-    color: inherit;
-    flex-grow: 1;
+.button-appbar {
+  color: inherit;
+  flex-grow: 1;
 }
-.projects{
-    
-    padding-top: 4%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 5%;
-    background: #202020;
+.projects {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  background: #202020;
 }
-.projects-title{
-    margin-top: 10px;
+.projects-title {
+  margin-top: 2%;
 }
 
-
-  
-
-.logos{
-    transform: translateZ(50px) ;
+.logos {
+  height: 69%;
+  width: 66%;
+  transform: translateZ(50px);
 }
-.skill-img{
-    
-    transform-style: preserve-3d;
-    height:323px;
-    width:406px;
-    perspective: 2000px;
+.skill-img {
+  transform-style: preserve-3d;
+  height: 323px;
+  width: 406px;
+  perspective: 1000px;
 }
-.back-img{
-    background: url("../../public/assets/skills/back.png");
-    background-size: 406px 323px;
+.back-img {
+  background: url("../../public/assets/skills/back.png");
+  background-size: 100% 100%;
 }
-.front-img{
-    background: url("../../public/assets/skills/front.png");
-    background-size: 406px 323px;
+.front-img {
+  background: url("../../public/assets/skills/front.png");
+  background-size: 100% 100%;
 }
-.other-img{
-    background: url("../../public/assets/skills/other.png");
-    background-size: 406px 323px;
+.other-img {
+  background: url("../../public/assets/skills/other.png");
+  background-size: 100% 100%;
 }
 
-.back-logos{
+.back-logos {
+  position: relative;
+  margin: auto;
+  margin-top: 5%;
+  display: block;
+  transform: translateZ(20px);
+}
+
+.justify {
+  justify-content: space-around;
+}
+
+.left-bar {
+  background-color: white;
+  border: none;
+  height: 50%;
+  width: 1px;
+  margin-right: 10%;
+}
+.right-bar {
+  border-left: 1px solid white;
+  height: 50%;
+  margin-left: 10%;
+}
+.parent2 {
+  position: absolute;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.footer {
+  background-color: #020202;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.icons {
+  padding-left: 22%;
+  padding-right: 22%;
+  padding-bottom: 5%;
+}
+.icon{
+  height:37px;
+}
+
+.footer-text {
+  color: white;
+  font-family: "Heebo";
+  text-align: center;
+  font-size: 12px;
+}
+.button-projects {
+  text-align: center;
+  align-items: center;
+}
+.row1{
+  display: flex;
+  width: 100%;
+}
+.col-footer{
+  width:25%;
+}
+@media screen and (max-width: 1000px) {
+  .skill-img {
+    height: 280px;
+    width: 290px;
+  }
+  .left-bar {
+    display: none;
+  }
+  .right-bar {
+    display: none;
+  }
+  .logo{
+    height:589px
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /**
+    * Header
+    */
+  .img-andres {
+    display: none;
+  }
+  .header {
+    margin-left: 18%;
+    margin-right: 13%;
+    margin-top: 30%;
+    margin-bottom: 30%;
+  }
+  /**
+    * Skills
+    */
+
+  .img-skill {
     position: relative;
-    margin:auto;
-    margin-top: 5%;
-    display: block;
-    transform: translateZ(20px) ;
+  }
 
+  .title-margin-skills {
+    margin-bottom: 10%;
+  }
+  /**
+    * Footer
+    */
+  .icons {
+    margin: 0%;
+    padding-bottom: 5%
+  }
+  .icon{
+    height:30px;
+  }
+  .col-icon{
+    width: 25%;
+  }
 
+  .logo{
+    height: 570px
+  }
+}
+@media screen and (max-width: 700px) {
+  .logo{
+    height: 510px
+  }
+}
+@media screen and (max-width: 530px) {
+  .logo{
+    height: 350px
+  }
+}
+  
+@media screen and (max-width: 400px) {
+  .logo{
+    height: 300px
+  }
+}
+@media screen and (max-width: 320px) {
+  .logo{
+    height: 250px
+  }
 }
 
-.left-bar{
-    background-color: white;
-    border: none;
-    height: 50%;
-    width:1px;
-    margin-right: 10%;
-}
-.right-bar{
-        border-left: 1px solid white;
-    height: 50%;
-    margin-left: 10%;
-}
-.parent2{
-    position: absolute;
-    
-    transform-style: preserve-3d;
-    
-    perspective: 1000px;
-}
-.footer{
-    background-color: #020202;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-.icons{
-    margin-left: 27%;
-    margin-right: 27%;
-    padding-bottom: 5%;
-}
-.footer-text{
-    color: white;
-    font-family: "Fira Mono";
-    text-align: center;
-    font-size: 15px;
-}
-.button-projects{
-    text-align: center; 
-    align-items: center;
-}

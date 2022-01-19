@@ -43,17 +43,17 @@ export default function Header() {
               </Slide>
             </div>
           </div>
-          <Slide direction="left" in={true} timeout={1500}>
 
-          <div className="col-sm">
-            <img
-              src="../../assets/profile.png"
-              alt="triangle with all three sides equal"
-              height="200"
-              width="200"
-            />
+          <div className="col-sm img-andres align">
+            <Slide direction="left" in={true} timeout={1500}>
+              <img
+                src="../../assets/profile.png"
+                alt="triangle with all three sides equal"
+                height="200"
+                width="200"
+              />
+            </Slide>
           </div>
-          </Slide>
         </div>
       </div>
     </div>

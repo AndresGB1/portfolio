@@ -1,70 +1,106 @@
 import * as React from "react";
 import "./Main.css";
-import info from "./infoProjects.js";
-
+import projectsInfo from "./infoProjects.js";
+import infoGames from "./infoGames.js";
 import Card from "./Card";
+import Card2 from "./Card2";
+import Box from "@mui/material/Box";
+import { Carousel } from "react-responsive-carousel";
 
 export default function Projects() {
   return (
     <div className="projects">
-      <div className="button-projects">
-      <h1 className="primary-text title ">My Portfolio</h1>
-      <Card
-        title={info.ieeeWeb.title}
-        description={info.ieeeWeb.description}
-        image={info.ieeeWeb.image}
-        technologies={info.ieeeWeb.technologies}
-        icon={"../assets/icons/github.svg"}
-        width={500}
-      />
-      <Card
-        title={info.vetWeb.title}
-        num={0}
-        description={info.vetWeb.description}
-        image={info.vetWeb.image}
-        technologies={info.vetWeb.technologies}
-        icon={"../assets/icons/github.svg"}
-      />
-      <Card
-        title={info.intraWeb.title}
-        description={info.intraWeb.description}
-        image={info.intraWeb.image}
-        technologies={info.intraWeb.technologies}
-        icon={"../assets/icons/github.svg"}
-      />
-      <div className="row margin">
-        <div className="col-md-6 align">
-          <Card
-            title={info.unityGame.title}
-            height={310}
-            width={290}
-            description={info.unityGame.description}
-            image={info.unityGame.image}
-            technologies={info.unityGame.technologies}
-            icon={"../assets/icons/github.svg"}
-          />
+       <div className="primary-text title  ">My Portfolio</div>
+      <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+        <div className="button-projects">
+          
+          {projectsInfo.info.map((projectInfo, index) => (
+            <div>
+              <Card
+                key={index}
+                index={index}
+                num={1}
+                title={projectInfo.title}
+                description={projectInfo.description}
+                image={projectInfo.image}
+                image2={projectInfo.image2}
+                technologies={projectInfo.technologies}
+                icon={"../assets/icons/github.svg"}
+              />
+            </div>
+          ))}
+          <div className="row margin">
+            {infoGames.info.map((gameInfo) => (
+              <div className="col-md-6 align">
+                <Card
+                  title={gameInfo.title}
+                  num={2}
+                  description={gameInfo.description}
+                  image={gameInfo.image}
+                  image2={gameInfo.image2}
+                  technologies={gameInfo.technologies}
+                  icon={"../assets/icons/github.svg"}
+                />
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="col-md-6 align">
-          <Card
-            title={info.brickBreakerGame.title}
-            num={0}
-            height={310}
-            width={190}
-            description={info.brickBreakerGame.description}
-            image={info.brickBreakerGame.image}
-            technologies={info.brickBreakerGame.technologies}
-            icon={"../assets/icons/github.svg"}
-          />
+      </Box>
+      <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+        <div>
+        <Carousel
+          infiniteLoop={true}
+          showStatus={false}
+        >
+          {projectsInfo.info.map((projectInfo, index) => (
+            <div>
+              <Card2
+                key={index}
+                index={index}
+                num={1}
+                title={projectInfo.title}
+                description={projectInfo.description}
+                image={projectInfo.image}
+                image2={projectInfo.image2}
+                technologies={projectInfo.technologies}
+                icon={"../assets/icons/github.svg"}
+              />
+            </div>
+          ))}
+        </Carousel>
+        <Carousel
+          style={{ width: "80%" }}
+          infiniteLoop={true}
+          showStatus={false}
+        >
+          
+            {infoGames.info.map((gameInfo) => (
+
+                <Card
+                  title={gameInfo.title}
+                  num={2}
+                  description={gameInfo.description}
+                  image={gameInfo.image}
+                  image2={gameInfo.image2}
+                  technologies={gameInfo.technologies}
+                  icon={"../assets/icons/github.svg"}
+                />
+              
+            ))}
+          
+        </Carousel>
         </div>
+      </Box>
+      <div className="button-projects align">
+        <a
+          className="primary-text margin3"
+          href="https://github.com/AndresGB1 "
+          rel="noreferrer"
+          target="_blank"
+        >
+          <button className="btn btn-primary   align">More Here</button>
+        </a>
       </div>
-      </div>
-      <div className="button-projects">
-      <button className="btn btn-primary  align">
-      <a className="primary-text"href="https://github.com/AndresGB1 " target="_blank" >
-        More Here
-      </a>
-      </button>
-    </div>
     </div>
   );
 }

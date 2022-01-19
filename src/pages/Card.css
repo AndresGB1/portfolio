@@ -1,45 +1,137 @@
-.card-projects{
-    margin:6%;
-    
-    margin-top: 8%;
-    
-    border-radius: 17px;
-    background: linear-gradient(to bottom, #050992, #2E3192);;
-    
+.card-projects {
+  margin: 6%;
+  display: inline-block;
+  border-radius: 17px;
 }
-.title-card{
+
+.card-projects:hover {
+  transition: all 0.7s ease-in-out;
+  transform: scale(1.08);
+}
+
+.row1 {
+  display: flex;
+  width: 100%;
+}
+.col1 {
+  width: 48%;
+}
+.col2 {
+  width: 52%;
+}
+
+.col3 {
+  width: 40%;
+}
+.col4 {
+  width: 60%;
+}
+.all-text {
+  text-align: justify;
+}
+
+.title-card {
+  font-family: "Fira code";
+  font-style: regular;
+  font-size: 22px;
+}
+.description-card {
+  font-family: "Fira Mono";
+  font-style: regular;
+  font-size: 11px;
+}
+.pad-card-text {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.technologies-card {
+  font-family: "Fira Mono";
+  font-style: regular;
+  font-size: 9px;
+}
+.second-card {
+  margin-top: 5%;
+
+  border-radius: 17px;
+  padding: 2%;
+  margin-right: 7%;
+  margin-left: 1%;
+  background: #202020;
+}
+.img-over {
+  position: relative;
+  text-align: center;
+}
+
+.text-over {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-28%, -50%);
+}
+
+.img-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 17px 17px 0;
+}
+
+.img-card2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 17px 0 0 17px;
+}
+.img-card3{
+  width: 100%;
+  height: 100%;
+  border-radius: 17px 17px 0 0;
+}
+.img-card4{
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 17px 17px;
+}
+@media screen and (max-width: 1200px) {
+  .title-card {
     font-family: "Fira code";
     font-style: regular;
-    font-size: 25px;
-}
-.description-card{
-    font-family: "Fira Mono";
-    font-style: regular;
     font-size: 13px;
-}
-.pad-card-text{
-    padding-left: 5%;
-    padding-right: 5%;
-}
-.technologies-card{
+  }
+  .description-card{
     font-family: "Fira Mono";
     font-style: regular;
     font-size: 9px;
+  }
+  .technologies-card {
+    font-family: "Fira Mono";
+    font-style: regular;
+    font-size: 7px;
+  }
 }
-.second-card{
-    margin-top:12%;
-    border-radius: 17px;
-    padding:2%;
-    margin-right: 7%;
-    margin-left: 1%;
-    background: #202020;
-}
-.center-contenedor{
-    position: relative;
+@media screen and (max-width: 420px) {
 
-}
-.align-p{
-    position: absolute;
-  top: 50%;
-  transform: translate(0, -50%)
+  .second-card {
+    margin-top: 0%;
+  
+    border-radius: 17px;
+    padding: 0%;
+    margin-right: 0%;
+    margin-left: 0%;
+    background: #151515;
+  }
+  .title-card {
+    font-family: "Fira code";
+    font-style: regular;
+    font-size: 9px;
+  }
+  .description-card{
+    font-family: "Fira Mono";
+    font-style: regular;
+    font-size: 7px;
+  }
+  .technologies-card {
+    font-family: "Fira Mono";
+    font-style: regular;
+    font-size: 7px;
+  }
 }
