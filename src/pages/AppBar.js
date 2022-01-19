@@ -15,7 +15,6 @@ import {
   useScrollTrigger,
   Slide,
   IconButton,
-  Typography,
   MenuItem,
   Box,
   Menu,
@@ -40,9 +39,7 @@ const useStyles = makeStyles({
     sx: { flexGrow: 1 },
   },
 });
-const alert = () => {
-  console.log("clicked");
-};
+
 
 HideOnScroll.propTypes = {
   children: PropTypes.element.isRequired,
@@ -63,16 +60,10 @@ export default function HideAppBar(props) {
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
   };
 
   return (

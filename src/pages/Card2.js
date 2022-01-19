@@ -5,7 +5,7 @@ import "./Main.css";
 export default function MediaCard(props) {
   return (
     <div className="card-projects">
-      <a href="https://branch-ieee-ueb.netlify.app" target="_blank">
+      <a href="https://branch-ieee-ueb.netlify.app" target="_blank" rel="noreferrer">
         <img
           className="img-card3"
           src={props.image}
