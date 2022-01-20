@@ -12,6 +12,7 @@ export default function MediaCard(props) {
       setDos("col4");
     }
   }
+  const link =props.link ? props.link : "https://github.com/AndresGB1";
   React.useEffect(() => {
     // Actualiza el título del documento usando la API del navegador
     col2();
@@ -23,7 +24,7 @@ export default function MediaCard(props) {
       
         <div className="row1">
           <div className={uno}>
-            <a href="https://branch-ieee-ueb.netlify.app" target="_blank" rel="noreferrer">
+            <a href={link} target="_blank" rel="noreferrer">
               <img
                 className="img-card2"
                 src={props.image}

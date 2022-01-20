@@ -26,6 +26,7 @@ export default function Projects() {
                 image2={projectInfo.image2}
                 technologies={projectInfo.technologies}
                 icon={"../assets/icons/github.svg"}
+                link={projectInfo.link}
               />
             </div>
           ))}
@@ -40,6 +41,7 @@ export default function Projects() {
                   image2={gameInfo.image2}
                   technologies={gameInfo.technologies}
                   icon={"../assets/icons/github.svg"}
+                  link={gameInfo.link}
                 />
               </div>
             ))}
@@ -66,6 +68,7 @@ export default function Projects() {
                 image2={projectInfo.image2}
                 technologies={projectInfo.technologies}
                 icon={"../assets/icons/github.svg"}
+                link={projectInfo.link}
               />
             </div>
           ))}
@@ -88,6 +91,7 @@ export default function Projects() {
                   image2={gameInfo.image2}
                   technologies={gameInfo.technologies}
                   icon={"../assets/icons/github.svg"}
+                  link={gameInfo.link}
                 />
               </div>
             ))}
