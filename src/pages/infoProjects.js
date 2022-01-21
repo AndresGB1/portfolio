@@ -7,7 +7,7 @@ const info = {
       image: "../assets/Projects/React-Web.png",
       image2: "../assets/Projects/React-Web2.png",
       technologies: "React NodeJS Netlify Heroku MySQL Swagger",
-      link: "https://branch-ieee.netlify.app/",
+      link: "https://branch-ieee-ueb.netlify.app/",
       github: "https://github.com/falfonsoPrg/FrontEndIEEE",
     },
     {
