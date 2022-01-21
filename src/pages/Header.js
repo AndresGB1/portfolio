@@ -25,7 +25,7 @@ export default function Header() {
                 <div className="description">
                   <p className="secondary-text p2 justify">
                     I am a Systems Engineer, passionate about programming and
-                    knowledge of different things like
+                    knowledge of different aspects among these
                     <Typed
                       strings={[
                         ": Crypto",

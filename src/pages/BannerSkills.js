@@ -58,16 +58,15 @@ export default function BannerSkills() {
                         />
                       </Tilt>
                     </div>
-                    <div className="col-sm align">
-                      <p className="secondary-text p2 text-skills">
-                        I like to develop back-end projects. I can help you
-                        develop API's, logic programming.
+                    <div className="col-sm align ">
+                      <p className="secondary-text p2 text-skills-right">
+                        The icons shown are technologies I work on. ¡I am always
+                        learning something new!
                         <br />
-                        <br />
-                        The icons shown are technologies in which i work
-                        continuously, some technologies escape me, however. ¡I
-                        am always learning something new!
-                      </p>
+                        I'm highly qualified in the management of Back-end
+                        projects. I'm constantly working on API's RESTful,
+                        databases, and logical programming.
+                        </p>
                     </div>
                   </div>
                 </Slide>
@@ -84,11 +83,9 @@ export default function BannerSkills() {
                 <Slide direction="up" in={secondRow} timeout={1000}>
                   <div className="row pad pad3">
                     <div className="col-sm align">
-                      <p className="secondary-text p2 text-skills">
-                        For the front-end, I know different technologies and I
-                        have developed different projects, however it is not
-                        what I am most passionate about, despite this web page I
-                        built it from scratch{" "}
+                    <p className="secondary-text p2 text-skills-left">
+                        Furthermore I'm also capable to develop Front-end
+                        projects. For example, this portfolio website. 
                       </p>
                     </div>
                     <div className="col-sm align">
@@ -126,10 +123,9 @@ export default function BannerSkills() {
                       </Tilt>
                     </div>
                     <div className="col-sm align">
-                      <p className="secondary-text p2 text-skills">
-                        I am constantly learning about the crypto world I have
-                        created some bots and I know part of the linux ecosystem
-                      </p>
+                    <p className="secondary-text p2 text-skills-right">
+                        My hobbies include  constant learning of IA, crypto, linux and chess.
+                        </p>                        
                     </div>
                   </div>
                 </Slide>
@@ -150,22 +146,19 @@ export default function BannerSkills() {
             {direction.map((item, index) => (
               <div key={index}>
                 <div>
-                <Tilt className={" "+item+"-img "}>
-                  <div >
-                  <img
-                    className="logo"
-                    style={{ padding: "3%" }}
-                    src={"../../assets/skills/" + item + "-logos.png"}
-                    
-                    alt="knowledge of java pyhon react  nodejs sql mysql postgresql heroku flask "
-                  />
+                  <Tilt className={" " + item + "-img "}>
+                    <div>
+                      <img
+                        className="logo"
+                        style={{ padding: "3%" }}
+                        src={"../../assets/skills/" + item + "-logos.png"}
+                        alt="knowledge of java pyhon react  nodejs sql mysql postgresql heroku flask "
+                      />
 
-                  <div className="legend margin-legend"> {item}</div>
-                  </div>
-                </Tilt>
-                
-              </div>
-
+                      <div className="legend margin-legend"> {item}</div>
+                    </div>
+                  </Tilt>
+                </div>
               </div>
             ))}
           </Carousel>

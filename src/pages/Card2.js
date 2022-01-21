@@ -3,15 +3,19 @@ import "./Card.css";
 import "./Main.css";
 
 export default function MediaCard(props) {
+  const link = props.link ? props.link : "https://github.com/AndresGB1";
+  const github = props.github ? props.github : "https://github.com/AndresGB1";
   return (
     <div className="card-projects">
-      <a href={props.link} target="_blank" rel="noreferrer">
-        <img
-          className="img-card3"
-          src={props.image}
-          height={props.height}
-          alt="Card  cap"
-        />
+      <a href={link} target="_blank" rel="noreferrer">
+        <div>
+          <img
+            className="img-card3"
+            src={props.image}
+            height={props.height}
+            alt="Card  cap"
+          />
+        </div>
       </a>
       <div className="img-over">
         <img
@@ -30,7 +34,9 @@ export default function MediaCard(props) {
               {props.technologies}
             </div>
             <div className="col-md-3 align">
-              <img className="img" src={props.icon} alt="icon" height="20" />
+              <a href={github} target="_blank" rel="noreferrer">
+                <img className="img" src={props.icon} alt="icon" height="18" />
+              </a>
             </div>
           </div>
         </div>

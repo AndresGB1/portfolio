@@ -33,7 +33,6 @@ function HideOnScroll(props) {
   );
 }
 
-
 HideOnScroll.propTypes = {
   children: PropTypes.element.isRequired,
   /**
@@ -45,15 +44,11 @@ HideOnScroll.propTypes = {
 const sections = ["Home", "Skills", "Projects", "Contact"];
 
 export default function HideAppBar(props) {
-  
-
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
@@ -156,18 +151,16 @@ export default function HideAppBar(props) {
         </section>
         <hr className="hr2" />
 
-        <a href="/" style={{ cursor: "pointer" }}>
-          <div className="pe">
-            <div className="cubo">
-              <div className="cara" id="uno"></div>
-              <div className="cara" id="dos"></div>
-              <div className="cara" id="tres"></div>
-              <div className="cara" id="cuatro"></div>
-              <div className="cara" id="cinco"></div>
-              <div className="cara" id="seis"></div>
-            </div>
+        <div className="pe">
+          <div className="cubo">
+            <div className="cara" id="uno"></div>
+            <div className="cara" id="dos"></div>
+            <div className="cara" id="tres"></div>
+            <div className="cara" id="cuatro"></div>
+            <div className="cara" id="cinco"></div>
+            <div className="cara" id="seis"></div>
           </div>
-        </a>
+        </div>
       </div>
       <section id="skills">
         <BannerSkills />

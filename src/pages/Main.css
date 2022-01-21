@@ -84,9 +84,15 @@
   background-color: white;
   width: 56%;
 }
-.text-skills {
-  padding-left: 15%;
-  padding-right: 15%;
+.text-skills-right {
+
+ padding-right: 23%;
+  padding-left:10%;
+  text-align: justify;
+}
+.text-skills-left{
+  padding-left: 23%;
+  padding-right: 13%;
   text-align: justify;
 }
 .button-appbar {
@@ -177,6 +183,7 @@
   font-size: 12px;
 }
 .button-projects {
+  padding-top:10%;
   text-align: center;
   align-items: center;
 }
@@ -188,6 +195,10 @@
   width:25%;
 }
 @media screen and (max-width: 1000px) {
+  .text-skills{
+    padding-left: 16%;
+    padding-right: 16%;
+  }
   .skill-img {
     height: 280px;
     width: 290px;
@@ -213,13 +224,12 @@
   .header {
     margin-left: 18%;
     margin-right: 13%;
-    margin-top: 30%;
-    margin-bottom: 30%;
+    padding-top: 30%;
+    padding-bottom: 30%;
   }
   /**
     * Skills
     */
-
   .img-skill {
     position: relative;
   }
@@ -227,6 +237,7 @@
   .title-margin-skills {
     margin-bottom: 10%;
   }
+ 
   /**
     * Footer
     */
@@ -246,6 +257,27 @@
   }
 }
 @media screen and (max-width: 700px) {
+  .header {
+    margin-left: 18%;
+    margin-right: 13%;
+    padding-top: 30%;
+    padding-bottom: 30%;
+  }
+   /**
+    * Projects
+    */
+    .projects {
+      padding-top: 30%;
+      padding-bottom: 30%;
+  
+    }
+      /**
+    * Skills
+    */
+  .banner-skills{
+    padding-top:30%;
+    padding-bottom: 30%;
+  }
   .logo{
     height: 510px
   }

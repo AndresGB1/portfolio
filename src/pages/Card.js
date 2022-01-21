@@ -13,8 +13,9 @@ export default function MediaCard(props) {
     }
   }
   const link =props.link ? props.link : "https://github.com/AndresGB1";
+  const github =props.github ? props.github : "https://github.com/AndresGB1";
   React.useEffect(() => {
-    // Actualiza el título del documento usando la API del navegador
+    
     col2();
   });
 
@@ -25,12 +26,14 @@ export default function MediaCard(props) {
         <div className="row1">
           <div className={uno}>
             <a href={link} target="_blank" rel="noreferrer">
+              <div>
               <img
                 className="img-card2"
                 src={props.image}
                 height={props.height}
                 alt="Card  cap"
               />
+              </div>
             </a>
           </div>
           <div className={dos+" img-over"}>
@@ -52,12 +55,14 @@ export default function MediaCard(props) {
                   {props.technologies}
                 </div>
                 <div className="col-md-3 align">
+                <a href={github} target="_blank" rel="noreferrer">
                   <img
                     className="img"
                     src={props.icon}
                     alt="icon"
                     height="20"
                   />
+                </a>
                 </div>
               </div>
             </div>

@@ -17,7 +17,6 @@ export default function Projects() {
           {projectsInfo.info.map((projectInfo, index) => (
             <div  key={index}>
               <Card
-               
                 index={index}
                 num={1}
                 title={projectInfo.title}
@@ -27,6 +26,7 @@ export default function Projects() {
                 technologies={projectInfo.technologies}
                 icon={"../assets/icons/github.svg"}
                 link={projectInfo.link}
+                github={projectInfo.github}
               />
             </div>
           ))}
@@ -42,6 +42,7 @@ export default function Projects() {
                   technologies={gameInfo.technologies}
                   icon={"../assets/icons/github.svg"}
                   link={gameInfo.link}
+                  github={gameInfo.github}
                 />
               </div>
             ))}
@@ -69,6 +70,7 @@ export default function Projects() {
                 technologies={projectInfo.technologies}
                 icon={"../assets/icons/github.svg"}
                 link={projectInfo.link}
+                github={projectInfo.github}
               />
             </div>
           ))}
@@ -92,6 +94,7 @@ export default function Projects() {
                   technologies={gameInfo.technologies}
                   icon={"../assets/icons/github.svg"}
                   link={gameInfo.link}
+                  github={gameInfo.github}
                 />
               </div>
             ))}
