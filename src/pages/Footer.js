@@ -37,7 +37,9 @@ export default function Footer(props) {
           </a>
         </div>
         <div className="align col-footer">
-          <img src="../assets/icons/gmail.svg" alt="gmail" className="icon" />
+            <a href="mailto:a.galvisbolivar@gmail.com" target="_blank"rel="noreferrer">
+              <img src="../assets/icons/gmail.svg" alt="gmail" className="icon" />
+            </a>
         </div>
       </div>
       <div className="align">
