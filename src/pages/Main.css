@@ -17,6 +17,11 @@
   align-items: center;
   justify-content: center;
 }
+.align2{
+  
+  justify-content: center;
+
+}
 .pad {
   padding-top: 5%;
 }
@@ -184,6 +189,7 @@
 }
 .button-projects {
   padding-top:10%;
+  width: 100%;
   text-align: center;
   align-items: center;
 }

@@ -9,10 +9,10 @@ import { Carousel } from "react-responsive-carousel";
 
 export default function Projects() {
   return (
-    <div className="projects">
+    <div className="projects ">
        <div className="primary-text title  ">My Portfolio</div>
       <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-        <div className="button-projects">
+        <div className="button-projects ">
           
           {projectsInfo.info.map((projectInfo, index) => (
             <div  key={index}>
@@ -30,7 +30,7 @@ export default function Projects() {
               />
             </div>
           ))}
-          <div className="row margin">
+          <div className="row margin ">
             {infoGames.info.map((gameInfo, index) => (
               <div className="col-md-6 align" key={index}>
                 <Card
