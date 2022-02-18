@@ -27,6 +27,7 @@ const info = {
       image: "../assets/Projects/Intra-Web.png",
       image2: "../assets/Projects/Intra-Web2.png",
       technologies: "React Bootstrap",
+      link: "https://panayar.github.io/INTRA_website/",
       github: "https://github.com/panayar/INTRA_website",
     },
   ],
