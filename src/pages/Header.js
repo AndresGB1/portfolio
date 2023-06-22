@@ -47,7 +47,7 @@ export default function Header() {
           <div className="col-sm img-andres align">
             <Slide direction="left" in={true} timeout={1500}>
               <img
-                src="../../assets/profile.png"
+                 src={process.env.PUBLIC_URL + "/assets/profile.png"}
                 alt="triangle with all three sides equal"
                 height="200"
                 width="200"

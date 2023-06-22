@@ -53,7 +53,7 @@ export default function BannerSkills() {
                       >
                         <img
                           className="logos"
-                          src="../../assets/skills/back-logos.png"
+                          src={process.env.PUBLIC_URL + "/assets/skills/back-logos.png"}
                           alt="knowledge of java pyhon react  nodejs sql mysql postgresql heroku flask "
                         />
                       </Tilt>
@@ -92,7 +92,7 @@ export default function BannerSkills() {
                       <Tilt className="align skill-img front-img ">
                         <img
                           className="logos"
-                          src="../../assets/skills/front-logos.png"
+                          src={process.env.PUBLIC_URL + "/assets/skills/front-logos.png"}
                           alt="knowledge of java pyhon react  nodejs sql mysql postgresql heroku flask "
                         />
                       </Tilt>
@@ -117,7 +117,7 @@ export default function BannerSkills() {
                       <Tilt className="align skill-img other-img ">
                         <img
                           className="responsive-img logos"
-                          src="../../assets/skills/other-logos.png"
+                          src={process.env.PUBLIC_URL + "/assets/skills/other-logos.png"}
                           alt="knowledge of java pyhon react  nodejs sql mysql postgresql heroku flask "
                         />
                       </Tilt>
@@ -151,7 +151,6 @@ export default function BannerSkills() {
                       <img
                         className="logo"
                         style={{ padding: "3%" }}
-                        src={"../../assets/skills/" + item + "-logos.png"}
                         alt="knowledge of java pyhon react  nodejs sql mysql postgresql heroku flask "
                       />
 
