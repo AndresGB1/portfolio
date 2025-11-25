@@ -6,38 +6,32 @@ const skillCategories = [
   {
     title: 'Lenguajes de Programación',
     icon: '💻',
-    skills: ['Python', 'Java', 'JavaScript', 'TypeScript', 'SQL'],
-    color: 'from-blue-500 to-cyan-500',
+    skills: ['Python', 'Java', 'JavaScript', 'TypeScript', 'SQL']
   },
   {
     title: 'Backend & APIs',
     icon: '⚙️',
-    skills: ['Spring Boot', 'Flask', 'FastAPI', 'RESTful APIs', 'GraphQL', 'Microservicios'],
-    color: 'from-green-500 to-emerald-500',
+    skills: ['Spring Boot', 'Flask', 'FastAPI', 'RESTful APIs', 'GraphQL', 'Microservicios']
   },
   {
     title: 'Cloud & DevOps',
     icon: '☁️',
-    skills: ['AWS (EC2, S3, Lambda)', 'Azure', 'Docker', 'Kubernetes', 'Terraform', 'CI/CD'],
-    color: 'from-orange-500 to-yellow-500',
+    skills: ['AWS (EC2, S3, Lambda)', 'Azure', 'Docker', 'Kubernetes', 'Terraform', 'CI/CD']
   },
   {
     title: 'Bases de Datos',
     icon: '🗄️',
-    skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'SQL Server'],
-    color: 'from-red-500 to-rose-500',
+    skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'SQL Server']
   },
   {
     title: 'Frontend',
     icon: '🎨',
-    skills: ['React', 'HTML/CSS', 'Tailwind CSS', 'Bootstrap'],
-    color: 'from-purple-500 to-pink-500',
+    skills: ['React', 'HTML/CSS', 'Tailwind CSS', 'Bootstrap']
   },
   {
     title: 'Herramientas & Metodologías',
     icon: '🛠️',
-    skills: ['Git/GitHub', 'Linux', 'Scrum/Agile', 'Jira', 'Testing'],
-    color: 'from-indigo-500 to-violet-500',
+    skills: ['Git/GitHub', 'Linux', 'Scrum/Agile', 'Jira', 'Testing']
   },
 ]
 
@@ -61,7 +55,7 @@ export default function Skills() {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <section id="skills" className="py-20 relative">
+    <section id="skills" className="relative">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/2 left-0 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl" />
