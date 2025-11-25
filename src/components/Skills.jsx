@@ -6,32 +6,32 @@ const skillCategories = [
   {
     title: 'Lenguajes de Programación',
     icon: '💻',
-    skills: ['Python', 'Java', 'JavaScript', 'TypeScript', 'SQL']
+    skills: ['Python', 'Java', 'JavaScript', 'TypeScript', 'SQL'],
   },
   {
     title: 'Backend & APIs',
     icon: '⚙️',
-    skills: ['Spring Boot', 'Flask', 'FastAPI', 'RESTful APIs', 'GraphQL', 'Microservicios']
+    skills: ['Spring Boot', 'Flask', 'FastAPI', 'RESTful APIs', 'GraphQL', 'Microservicios'],
   },
   {
     title: 'Cloud & DevOps',
     icon: '☁️',
-    skills: ['AWS (EC2, S3, Lambda)', 'Azure', 'Docker', 'Kubernetes', 'Terraform', 'CI/CD']
+    skills: ['AWS (EC2, S3, Lambda)', 'Azure', 'Docker', 'Kubernetes', 'Terraform', 'CI/CD'],
   },
   {
     title: 'Bases de Datos',
     icon: '🗄️',
-    skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'SQL Server']
+    skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'SQL Server'],
   },
   {
     title: 'Frontend',
     icon: '🎨',
-    skills: ['React', 'HTML/CSS', 'Tailwind CSS', 'Bootstrap']
+    skills: ['React', 'HTML/CSS', 'Tailwind CSS', 'Bootstrap'],
   },
   {
     title: 'Herramientas & Metodologías',
     icon: '🛠️',
-    skills: ['Git/GitHub', 'Linux', 'Scrum/Agile', 'Jira', 'Testing']
+    skills: ['Git/GitHub', 'Linux', 'Scrum/Agile', 'Jira', 'Testing'],
   },
 ]
 
@@ -100,7 +100,7 @@ export default function Skills() {
                   <motion.span
                     key={skillIndex}
                     whileHover={{ scale: 1.05 }}
-                    className={`skill-badge bg-gradient-to-r ${category.color} bg-opacity-10 hover:bg-opacity-20`}
+                    className="px-3 py-1.5 text-sm font-medium rounded-lg border bg-white/10 text-white border-white/20 transition-all duration-200"
                   >
                     {skill}
                   </motion.span>
