@@ -20,7 +20,7 @@ const contactInfo = [
     icon: Linkedin,
     label: 'LinkedIn',
     value: '/in/andresgalvisbolivar',
-    href: 'https://www.linkedin.com/in/andresgalvisbolivar/',
+    href: 'https://www.linkedin.com/in/andres-galvis-bolivar/',
   },
   {
     icon: Github,
