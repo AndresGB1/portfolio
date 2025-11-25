@@ -1,7 +1,46 @@
+@import "tailwindcss";
 
-.primary-text {
-  color: white;
+@layer base {
+  :root {
+    --gradient-start: #0f172a;
+    --gradient-end: #1e293b;
+    --accent-primary: #3b82f6;
+    --accent-secondary: #8b5cf6;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white min-h-screen;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    margin: 0;
+  }
 }
-.secondary-text{
-  color: #A1A1A1;
+
+@layer components {
+  .section-container {
+    @apply max-w-6xl mx-auto px-6 py-20;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent;
+  }
+
+  .card-gradient {
+    @apply bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg font-semibold 
+           transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25 hover:scale-105;
+  }
+
+  .skill-badge {
+    @apply px-4 py-2 rounded-full text-sm font-medium transition-all duration-300
+           bg-slate-700/50 border border-slate-600/50 hover:border-blue-400/50 hover:bg-slate-700;
+  }
 }
