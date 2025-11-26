@@ -104,8 +104,8 @@ export default function Hero() {
             >
               {[
                 { icon: Github, href: 'https://github.com/AndresGB1' },
-                { icon: Linkedin, href: 'https://www.linkedin.com/in/andresgalvisbolivar/' },
-                { icon: Mail, href: 'mailto:andresfgalvisb@gmail.com' },
+                { icon: Linkedin, href: 'https://www.linkedin.com/in/andres-galvis-bolivar/' },
+                { icon: Mail, href: 'mailto:afgalvisb@gmail.com' },
               ].map((social, index) => (
                 <motion.a
                   key={index}
